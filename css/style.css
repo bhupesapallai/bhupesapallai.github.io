@@ -1,0 +1,130 @@
+body {
+  background-image: linear-gradient(#3400ad, #9424f0);
+}
+/*------Header-------*/
+.header {
+  position: sticky;
+  z-index: 9999999999;
+  top: 0;
+  left: 0;
+  padding: 0vh 5vw;
+}
+.nav {
+  width: 100%;
+  padding: 1vw 0vw;
+  display: inline-block;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+  font-size: 30px;
+  font-family: "Aquire Bold";
+}
+.logo span:nth-child(even) {
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+  border-bottom: 2px solid white;
+  letter-spacing: -1em;
+  color: #fff;
+}
+.logo span {
+  display: inline-flex;
+  color: #a1e2a1;
+}
+.logo:hover span:nth-child(2) {
+  letter-spacing: 0;
+  transition-delay: 0s;
+  padding-bottom: 2px;
+}
+
+.logo:hover span:nth-child(4) {
+  letter-spacing: 0;
+  transition-delay: 0.2s;
+  padding-bottom: 2px;
+}
+
+.menuhome {
+  display: flex;
+  font-size: 20px;
+}
+
+.menuhome a {
+  margin-right: 40px;
+  padding-top: 10px;
+  font-weight: 100;
+  font-variant: small-caps;
+}
+.menuhome .last {
+  margin: 0;
+}
+
+.menuhome .active {
+  border-bottom: 3px solid yellow;
+  padding-bottom: 2px;
+}
+.menuhome a:hover {
+  color: white;
+}
+.menuhome a:hover span,
+.menu a:hover span {
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+}
+.hamburgerbtn {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 30px;
+}
+.menu {
+  float: right;
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.menu a {
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1vw;
+  font-size: 100%;
+}
+
+.headerbtn {
+  width: fit-content;
+  padding: 1vw;
+  border-radius: 50px;
+  border-style: hidden;
+}
+
+.headerbtn a {
+  color: #100051;
+}
+
+.headerbtn:hover {
+  background-color: #fd297a;
+  box-shadow: 0px 2px 4px 2px #00000043;
+}
+.headerbtn a:hover {
+  color: #fff;
+}
+
+.offcanvas {
+  width: 100%;
+  background: rgb(00, 00, 00, 0.7);
+  padding-top: 8%;
+}
+.btn-close {
+  color: black !important;
+  font-size: 30px;
+  top: 5%;
+  right: 6%;
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
