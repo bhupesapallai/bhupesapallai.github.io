@@ -8,71 +8,24 @@ body {
   top: 0;
   left: 0;
   padding: 0vh 5vw;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
 }
+
 .nav {
   width: 100%;
   padding: 1vw 0vw;
-  display: inline-block;
 }
 
 .logo {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  float: left;
-  font-size: 30px;
-  font-family: "Aquire Bold";
-}
-.logo span:nth-child(even) {
-  overflow: hidden;
-  transition: ease-in-out 0.5s;
-  border-bottom: 2px solid white;
-  letter-spacing: -1em;
-  color: #fff;
-}
-.logo span {
-  display: inline-flex;
-  color: #a1e2a1;
-}
-.logo:hover span:nth-child(2) {
-  letter-spacing: 0;
-  transition-delay: 0s;
-  padding-bottom: 2px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/favicon.png);
+  background-size: contain;
+  border-radius: 50%;
 }
 
-.logo:hover span:nth-child(4) {
-  letter-spacing: 0;
-  transition-delay: 0.2s;
-  padding-bottom: 2px;
-}
-
-.menuhome {
-  display: flex;
-  font-size: 20px;
-}
-
-.menuhome a {
-  margin-right: 40px;
-  padding-top: 10px;
-  font-weight: 100;
-  font-variant: small-caps;
-}
-.menuhome .last {
-  margin: 0;
-}
-
-.menuhome .active {
-  border-bottom: 3px solid yellow;
-  padding-bottom: 2px;
-}
-.menuhome a:hover {
-  color: white;
-}
-.menuhome a:hover span,
-.menu a:hover span {
-  border-bottom: 3px solid white;
-  padding-bottom: 2px;
-}
 .hamburgerbtn {
   float: right;
   background: none;
@@ -93,6 +46,10 @@ body {
   text-transform: uppercase;
   padding: 1vw;
   font-size: 100%;
+  color: #fff;
+}
+.menu a:hover {
+  color: #9424f0;
 }
 
 .headerbtn {
