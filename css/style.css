@@ -59,7 +59,7 @@
   margin: 0px;
   align-content: space-around;
   overflow: auto;
-  padding: 0px;
+  padding: 3% 10%;
   background-color: rgb(245, 242, 255);
   z-index: 1;
 }
@@ -94,6 +94,26 @@ hr {
   padding: 0px;
   margin: 0px;
 }
+
+/****************************Home page********************************/
+.about {
+  display: flex;
+  width: 100%;
+}
+.about div {
+  flex: 0 0 70%;
+}
+.profile {
+  max-width: 31%;
+}
+.profile img {
+  max-width: 100%;
+}
+.abouttxt {
+  max-width: 100%;
+  padding: 0px 5%;
+}
+
 @media (min-width: 992px) {
   .leftbar {
     left: 0;
