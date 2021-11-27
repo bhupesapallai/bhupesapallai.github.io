@@ -16,17 +16,41 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
 }
 .leftbar img {
   width: 20px;
+}
+.menu li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+.menu li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.social {
+  margin: 0px auto;
+  width: fit-content;
 }
 .social ul {
   display: flex;
   flex-direction: row;
   list-style: none;
+  padding: 0px;
 }
 .social ul li a {
   color: white;
+  padding: 10px 10px;
 }
 .rightbar {
   width: 85vw;
@@ -36,6 +60,7 @@
   overflow: auto;
   padding: 0px;
   background-color: rgb(245, 242, 255);
+  z-index: 1;
 }
 .menu ul {
   padding: 0px;
@@ -47,6 +72,7 @@
   text-transform: capitalize;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .menu ul li:hover {
   background-color: rgb(255, 255, 255);
