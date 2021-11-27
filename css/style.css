@@ -52,6 +52,7 @@
   color: white;
   padding: 10px 10px;
 }
+
 .rightbar {
   width: 85vw;
   height: 100vh;
@@ -65,7 +66,7 @@
 .menu ul {
   padding: 0px;
 }
-.menu ul li {
+.menu ul li a {
   padding: 20px 25px;
   list-style: none;
   font-weight: 400;
@@ -73,11 +74,16 @@
   display: flex;
   align-items: center;
   position: relative;
+  width: 100%;
+  color: white;
+  text-decoration: none;
 }
-.menu ul li:hover {
+.menu ul li a:hover {
   background-color: rgb(255, 255, 255);
   color: #100051;
+  font-weight: 700;
 }
+
 .menu ul li i {
   padding-right: 10px;
 }
