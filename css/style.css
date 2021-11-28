@@ -158,7 +158,7 @@ h5 {
 .tour-desc {
   border-radius: 5px;
   padding: 40px;
-  display: flex;
+  display: flex !important;
   flex: 0 0 20%;
   justify-content: space-between;
   max-width: 100%;
