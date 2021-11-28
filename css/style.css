@@ -117,8 +117,7 @@ hr {
   max-width: 100%;
   padding: 0% 5%;
 }
-.about h5,
-.testimonialsection h5 {
+h5 {
   font-family: "Estonia", cursive;
   font-size: xxx-large;
   border-bottom: 2px solid #100051;
@@ -137,6 +136,7 @@ hr {
 .testimonialsection {
   width: 80%;
   margin: auto;
+  padding-bottom: 30px;
 }
 .testimonialsection h5 {
   margin: auto;
@@ -182,12 +182,14 @@ img.tm-people {
   font-family: "Montserrat", Sans-serif;
   font-size: 14px;
   color: #6c83a2;
+  font-weight: 500;
 }
 
 .link-position {
   font-family: "Montserrat", Sans-serif;
   font-size: 12px;
   color: #6c83a2;
+  text-align: center;
 }
 
 .owl-carousel .owl-item .card {
@@ -220,6 +222,38 @@ img.tm-people {
   opacity: 1;
   transform: translateY(2px);
   background: #83b8e7 !important;
+}
+
+/*******************************Home-Contact***********************************/
+.contact-home {
+  max-width: 100%;
+  margin: auto;
+  padding: 3% 5%;
+  background-color: rgb(227, 234, 238);
+}
+.contact-home h5 {
+  margin: auto;
+}
+
+.skillgrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 15px;
+  margin: auto;
+  width: fit-content;
+  margin-top: 20px;
+}
+.contact-btn a {
+  padding: 10px 20px;
+  background-color: #001ba1;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.contact-btn {
+  margin: auto;
+  width: fit-content;
+  margin-top: 50px;
 }
 
 @media (min-width: 480.6px) and (max-width: 575.5px) {
