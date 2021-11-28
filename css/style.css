@@ -2,6 +2,7 @@
   display: flex;
   position: sticky;
   top: 0;
+  font-family: "Nunito", sans-serif;
 }
 .navbar {
   padding: 0px;
@@ -56,10 +57,9 @@
 .rightbar {
   width: 85vw;
   height: 100vh;
-  margin: 0px;
+  margin: auto;
   align-content: space-around;
   overflow: auto;
-  padding: 3% 10%;
   background-color: rgb(245, 242, 255);
   z-index: 1;
 }
@@ -83,6 +83,12 @@
   color: #100051;
   font-weight: 700;
 }
+.active a {
+  color: #100051 !important;
+  background-color: rgb(255, 255, 255, 0.7);
+  font-weight: 700;
+  border-bottom: 5px solid white;
+}
 
 .menu ul li i {
   padding-right: 10px;
@@ -98,20 +104,32 @@ hr {
 /****************************Home page********************************/
 .about {
   display: flex;
-  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding: 3% 5%;
+  background-color: rgb(227, 234, 238);
 }
 .about div {
   flex: 0 0 70%;
 }
 .profile {
-  max-width: 31%;
+  max-width: 30%;
+  height: inherit;
 }
 .profile img {
   max-width: 100%;
+  height: 100%;
 }
 .abouttxt {
   max-width: 100%;
-  padding: 0px 5%;
+  padding: 0% 5%;
+}
+.about h5 {
+  font-family: "Estonia", cursive;
+  font-size: xxx-large;
+  border-bottom: 2px solid #100051;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 992px) {
