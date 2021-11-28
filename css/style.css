@@ -22,7 +22,10 @@
 .leftbar img {
   width: 20px;
 }
-.menu li:after {
+.menu li {
+  padding: 0px;
+}
+.menu li a:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -30,11 +33,11 @@
   height: 5px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
-  transform-origin: bottom right;
-  transition: transform 0.5s ease-out;
+  background-image: linear-gradient(45deg, #ff9933, #ffffff, #138808);
+  transform-origin: left;
+  transition: transform 0.4s ease-in;
 }
-.menu li:hover:after {
+.menu li a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -52,6 +55,7 @@
 .social ul li a {
   color: white;
   padding: 10px 10px;
+  margin: 0;
 }
 
 .rightbar {
@@ -77,17 +81,6 @@
   width: 100%;
   color: white;
   text-decoration: none;
-}
-.menu ul li a:hover {
-  background-color: rgb(255, 255, 255);
-  color: #100051;
-  font-weight: 700;
-}
-.active a {
-  color: #100051 !important;
-  background-color: rgb(255, 255, 255, 0.7);
-  font-weight: 700;
-  border-bottom: 5px solid white;
 }
 
 .menu ul li i {
