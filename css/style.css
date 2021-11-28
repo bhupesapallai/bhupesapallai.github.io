@@ -144,7 +144,8 @@ h5 {
 }
 .owl-carousel .owl-item {
   transition: all 0.3s ease-in-out;
-  width: 300px;
+  width: 100%;
+  height: inherit;
 }
 
 .owl-carousel .owl-item .card {
@@ -157,6 +158,18 @@ h5 {
 .tour-desc {
   border-radius: 5px;
   padding: 40px;
+  display: flex;
+  flex: 0 0 20%;
+  max-width: 100%;
+  justify-content: space-between;
+}
+.tour-desc .testimonial-profile {
+  max-width: 150px;
+}
+.tour-desc .tour-text {
+  max-width: 80%;
+  text-align: left;
+  padding: 20px;
 }
 .tour-desc img {
   width: 50px !important;
@@ -183,6 +196,7 @@ img.tm-people {
   font-size: 14px;
   color: #6c83a2;
   font-weight: 500;
+  text-align: center;
 }
 
 .link-position {
@@ -271,8 +285,12 @@ img.tm-people {
   .rightbar {
     width: 100vw;
   }
+  .navbar-toggler {
+    right: 0;
+  }
   .leftbar {
     right: 0;
+    width: 250px;
   }
   .navbar {
     padding: 10px;
