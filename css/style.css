@@ -251,11 +251,14 @@ img.tm-people {
 
 .skillgrid {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 15px;
   margin: auto;
   width: fit-content;
   margin-top: 20px;
+}
+.skillgrid .card {
+  width: 250px;
 }
 .contact-btn a {
   padding: 10px 20px;
@@ -269,7 +272,19 @@ img.tm-people {
   width: fit-content;
   margin-top: 50px;
 }
-
+@media (max-width: 1350px) {
+  .skillgrid {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 870px) {
+  .skillgrid {
+    grid-template-columns: auto auto;
+  }
+  .skillgrid .card {
+    width: 350px;
+  }
+}
 @media (min-width: 480.6px) and (max-width: 575.5px) {
   .owl-carousel .owl-item .card .name {
     left: 24%;
