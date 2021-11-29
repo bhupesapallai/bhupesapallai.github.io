@@ -150,8 +150,7 @@ h5 {
   padding-bottom: 30px;
 }
 .testimonialsection h5,
-.education h5,
-.contact-home h5 {
+.education h5 {
   margin: auto;
   padding-top: 40px;
 }
@@ -258,13 +257,19 @@ img.tm-people {
   padding: 3% 5%;
   padding-top: 0px;
 }
-
+.contact-home-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  width: 90%;
+  margin: auto;
+}
 .skillgrid {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 15px;
   margin: auto;
-  width: fit-content;
+  width: 90%;
   margin-top: 20px;
 }
 .skillgrid .card {
@@ -278,7 +283,6 @@ img.tm-people {
   border-radius: 3px;
 }
 .contact-btn {
-  margin: auto;
   width: fit-content;
   margin-top: 50px;
 }
