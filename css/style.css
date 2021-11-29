@@ -3,6 +3,7 @@
   position: sticky;
   top: 0;
   font-family: "Nunito", sans-serif;
+  overflow: hidden;
 }
 .navbar {
   padding: 0px;
@@ -134,7 +135,6 @@ h5 {
   border-bottom: 2px solid #100051;
   padding: 5px;
   margin-bottom: 10px;
-
   width: fit-content;
 }
 
@@ -149,7 +149,9 @@ h5 {
   margin: auto;
   padding-bottom: 30px;
 }
-.testimonialsection h5 {
+.testimonialsection h5,
+.education h5,
+.contact-home h5 {
   margin: auto;
   padding-top: 40px;
 }
@@ -254,10 +256,7 @@ img.tm-people {
   max-width: 100%;
   margin: auto;
   padding: 3% 5%;
-  background-color: rgb(227, 234, 238);
-}
-.contact-home h5 {
-  margin: auto;
+  padding-top: 0px;
 }
 
 .skillgrid {
@@ -283,6 +282,27 @@ img.tm-people {
   width: fit-content;
   margin-top: 50px;
 }
+/*********************************Education***********************************/
+.education-row .col-md-4 {
+  max-height: inherit;
+  padding: 10px;
+  width: 400px;
+}
+.p-3 {
+  height: 100%;
+}
+.education-row {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: fit-content;
+}
+.education {
+  background-color: rgb(227, 234, 238);
+  padding: 3% 5%;
+  padding-top: 0px;
+}
+
 /*******************************Contact form*********************************/
 .formFooter {
   display: none !important;
@@ -306,11 +326,18 @@ img.tm-people {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   .owl-carousel .owl-item .card .name {
     left: 30%;
   }
+  .skillgrid .card {
+    width: 100px !important;
+  }
+  .skillgrid .card h6 {
+    font-size: 12px;
+  }
 }
+
 @media (max-width: 992px) {
   .rightbar {
     width: 100vw;
