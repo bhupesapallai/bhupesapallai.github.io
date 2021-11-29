@@ -19,7 +19,7 @@
   justify-content: space-between;
 }
 .leftbar img {
-  width: 20px;
+  width: 30px;
 }
 .menu li {
   padding: 0px;
@@ -46,6 +46,9 @@
   width: fit-content;
   padding: 15px 0px 0px 0px;
 }
+.footer {
+  background-color: #100051;
+}
 .social ul {
   display: flex;
   flex-direction: row;
@@ -66,6 +69,7 @@
   overflow: auto;
   background-color: rgb(245, 242, 255);
   z-index: 1;
+  overflow-x: hidden;
 }
 .menu ul {
   padding: 0px;
@@ -86,8 +90,15 @@
 .menu ul li i {
   padding-right: 10px;
 }
-.icon {
+.head {
   padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.head h6 {
+  width: fit-content;
+  margin: 0px;
+  padding: 10px 20px;
 }
 hr {
   padding: 0px;
@@ -271,6 +282,10 @@ img.tm-people {
   margin: auto;
   width: fit-content;
   margin-top: 50px;
+}
+/*******************************Contact form*********************************/
+.formFooter {
+  display: none !important;
 }
 @media (max-width: 1350px) {
   .skillgrid {
