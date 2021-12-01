@@ -123,7 +123,6 @@ hr {
 }
 .profile img {
   max-width: 100%;
-  height: 100%;
 }
 .abouttxt {
   max-width: 100%;
@@ -322,6 +321,9 @@ img.tm-people {
   }
   .skillgrid .card {
     width: 350px;
+  }
+  .abouttxt p {
+    font-size: 12px;
   }
 }
 @media (min-width: 480.6px) and (max-width: 575.5px) {
