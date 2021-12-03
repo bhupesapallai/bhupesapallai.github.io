@@ -265,15 +265,13 @@ img.tm-people {
 }
 .skillgrid {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-gap: 15px;
   margin: auto;
   width: 90%;
   margin-top: 20px;
 }
-.skillgrid .card {
-  width: 250px;
-}
+
 .contact-btn a {
   padding: 10px 20px;
   background-color: #001ba1;
@@ -305,11 +303,60 @@ img.tm-people {
   padding: 3% 5%;
   padding-top: 0px;
 }
-
-/*******************************Contact form*********************************/
-.formFooter {
-  display: none !important;
+/********************************Footer********************************************/
+footer {
+  background-color: antiquewhite;
 }
+.footer-right {
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+}
+.footer-right p {
+  margin: 0;
+}
+.footer-right div {
+  color: red;
+  animation: pulse 2s infinite;
+  width: fit-content;
+  padding: 0px 5px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.75);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.75);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+/*******************************Work Experience*********************************/
+.work .heading {
+  padding: 20px;
+}
+.work {
+  background-color: rgb(227, 234, 238);
+  padding: 20px;
+}
+.work h5 {
+  margin: auto;
+  padding-top: 20px 0px;
+}
+.work .heading h6,
+.work .heading h4 {
+  width: fit-content;
+  margin: auto;
+}
+
 @media (max-width: 1350px) {
   .skillgrid {
     grid-template-columns: auto auto auto;
@@ -318,9 +365,6 @@ img.tm-people {
 @media (max-width: 870px) {
   .skillgrid {
     grid-template-columns: auto auto;
-  }
-  .skillgrid .card {
-    width: 350px;
   }
   .abouttxt p {
     font-size: 12px;
@@ -336,8 +380,8 @@ img.tm-people {
   .owl-carousel .owl-item .card .name {
     left: 30%;
   }
-  .skillgrid .card {
-    width: 100px !important;
+  .skillgrid {
+    grid-template-columns: auto auto;
   }
   .skillgrid .card h6 {
     font-size: 12px;
