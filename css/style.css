@@ -373,8 +373,8 @@ footer {
 }
 .file-grid {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
   margin: auto;
   width: 95%;
 }
@@ -386,17 +386,14 @@ footer {
   flex-direction: column;
   width: fit-content;
   margin: auto;
-  padding: 15px;
   background-color: white;
   border-radius: 5px;
-  height: 360px;
 }
 .file .item-name h6 {
-  padding: 10px 0px;
+  padding: 10px 10px;
   font-weight: bold;
 }
 .file iframe {
-  width: 350px;
   height: 300px;
 }
 @media (max-width: 1350px) {
