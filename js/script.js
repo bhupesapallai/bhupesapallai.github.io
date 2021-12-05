@@ -21,3 +21,14 @@ responsive: {
 }
 });
 });
+
+var loader;
+
+function myFunction() {
+  loader = setTimeout(showPage, 500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("body").style.display = "flex";
+}
